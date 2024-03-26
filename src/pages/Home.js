@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BiTimeFive } from "react-icons/bi";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
@@ -124,6 +125,57 @@ const Home = () => {
             
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="categories d-flex justify-content-between align-items-center">
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Poblacion</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Playas</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Faros</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Personalizado</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="selection-heading">Coleccion Destacada</h3>
+            </div>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
           </div>
         </div>
       </section>

@@ -59,16 +59,16 @@ const Footer = () => {
                   info@illailustrada.com
                 </a>
                 <div className="social_icons d-flex align-items-center gap-30 mt-4">
-                  <a className="text-white fs-5" href="">
+                  <a className="text-white fs-5" href="#">
                     <BsLinkedin />
                   </a>
-                  <a className="text-white fs-5" href="">
+                  <a className="text-white fs-5" href="#">
                     <BsInstagram />
                   </a>
-                  <a className="text-white fs-5" href="">
+                  <a className="text-white fs-5" href="#">
                     <BsGithub />
                   </a>
-                  <a className="text-white fs-5" href="">
+                  <a className="text-white fs-5" href="#">
                     <BsYoutube />
                   </a>
                 </div>
@@ -114,7 +114,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className="text-center mb-0 text-white">
-                &copy; {new Date().getFullYear()}; Power by BartoPons
+                &copy; {new Date().getFullYear()}; by BartoPons
               </p>
             </div>
           </div>
