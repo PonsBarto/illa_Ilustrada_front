@@ -29,7 +29,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Illa Ilustrada</Link>
+                <Link className="text-white">illa ilustrada</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -70,8 +70,8 @@ const Header = () => {
                   <Link className="d-flex aling-items-center gap-10 text-white">
                     <img src="images/compare.png" alt="user" />
                     <p className="mb-0">
-                      Mi Cuanta <br />
-                      Resgistro
+                      Mi Cuenta <br />
+                      Registro
                     </p>
                   </Link>
                 </div>
@@ -93,7 +93,7 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex laign-items-center gap-30">
+              <div className="menu-bottom d-flex align-items-center gap-30">
                 <div>
                   <div className="dropdown">
                     <button
@@ -102,26 +102,27 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/compare.png" />
+                      <img src="images/compare.png" alt=""/>
                       <span className="me-5 d-inline-block">
                         Ver Categorias
                       </span>
                     </button>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="">
                           Action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
