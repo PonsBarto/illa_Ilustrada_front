@@ -102,13 +102,15 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/compare.png" alt=""/>
+                      <img src="images/compare.png" alt="" />
                       <span className="me-5 d-inline-block">
                         Ver Categorias
                       </span>
                     </button>
-                    <ul className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1">
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
                       <li>
                         <Link className="dropdown-item text-white" to="">
                           Action
@@ -129,16 +131,16 @@ const Header = () => {
                 </div>
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
-                    <NavLink className="text-white" to="/">
+                    <NavLink to="/">
                       Home
                     </NavLink>
-                    <NavLink className="text-white" to="/">
+                    <NavLink  to="/store">
                       Nuestra tienda
                     </NavLink>
-                    <NavLink className="text-white" to="/">
+                    <NavLink to="/">
                       Blogs
                     </NavLink>
-                    <NavLink className="text-white" to="/">
+                    <NavLink to="/">
                       Contacto
                     </NavLink>
                   </div>
