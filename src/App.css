@@ -314,6 +314,20 @@ small-banner {
   font-weight: 600;
   color: var(--color-1c1c1b);
   margin-bottom: 15 px;
+  margin-top: 15px;
+}
+
+.colors{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 /*Our Sotre*/

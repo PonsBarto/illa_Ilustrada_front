@@ -26,35 +26,78 @@ const OurStore = () => {
                 <h3 className="filter-title">Filtrado por</h3>
                 <div>
                   <h5 className="sub-title">Disponibilidad</h5>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="inStock"
-                    />
-                    <label className="form-check-label" htmlFor="inStock">
-                      En Stock (1)
-                    </label>
+                  <div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="inStock"
+                      />
+                      <label className="form-check-label" htmlFor="inStock">
+                        En Stock (1)
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="outOfStock"
+                      />
+                      <label className="form-check-label" htmlFor="outOfStock">
+                        Sin Stock (0)
+                      </label>
+                    </div>
                   </div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="outOfStock"
-                    />
-                    <label className="form-check-label" htmlFor="outOfStock">
-                      Sin Stock (0)
-                    </label>
+                  <h5 className="sub-title">Precio</h5>
+                  <div className="d-flex aling-items-center gap-10">
+                    <div className="form-floating mb-3">
+                      <input
+                        type="email"
+                        className="form-control py-1"
+                        id="floatingInput"
+                        placeholder="from"
+                      />
+                      <label htmlfor="floatingInput">Desde</label>
+                    </div>
+                    <div className="form-floating mb-3">
+                      <input
+                        type="email"
+                        className="form-control py-1"
+                        id="floatingInput1"
+                        placeholder="to"
+                      />
+                      <label htmlfor="floatingInput1">Hasta</label>
+                    </div>
+                  </div>
+                  <h5 className="sub-title">Colores</h5>
+                  <div>
+                    <div>
+                        <ul className="colors ps-0">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            
+                        </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="filter-card mb-3">
-                <h3 className="filter-title">Etiquetas</h3>
-              </div>
-              <div className="filter-card mb-3">
-                <h3 className="filter-title">Te proponemos</h3>
               </div>
             </div>
             <div className="col-9"></div>
