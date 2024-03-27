@@ -1,5 +1,6 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 const ProductCard = () => {
   return (
@@ -21,6 +22,22 @@ const ProductCard = () => {
             activeColor="#ffd700"
           />
           <p className="price">14€</p>
+        </div>
+        <div className="action-bar position-absolute">
+          <div className="d-flex flex-column gap-15">
+            <Link>
+              <img src="images/wish.svg" alt="wishlist" />
+            </Link>
+            <Link>
+              <img src="images/prodcompare.svg" alt="compare" />
+            </Link>
+            <Link>
+              <img src="images/view.svg" alt="view" />
+            </Link>
+            <Link>
+              <img src="images/add-cart.svg" alt="addcart" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

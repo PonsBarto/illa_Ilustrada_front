@@ -93,6 +93,57 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
+              <div className="categories d-flex justify-content-between align-items-center">
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Poblacion</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Playas</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Faros</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Personalizado</h6>
+                    <p>10 productos</p>
+                    <img src="images/banner2.png" alt="Poblaciones"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="feature-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="selection-heading">Coleccion Destacada</h3>
+            </div>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+          </div>
+        </div>
+      </section>
+      <section className="home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
               <div className="servies d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center gap-15">
                   <img src="images/estrella1.png" alt="services" />
@@ -128,57 +179,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home-wrapper-2 py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="categories d-flex justify-content-between align-items-center">
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Poblacion</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Playas</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Faros</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Personalizado</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="selection-heading">Coleccion Destacada</h3>
-            </div>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-          </div>
-        </div>
-      </section>
+    
     </>
   );
 };
