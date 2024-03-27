@@ -138,7 +138,7 @@ const Header = () => {
                       Nuestra tienda
                     </NavLink>
                     <NavLink to="/">
-                      Blogs
+                      Nosotros
                     </NavLink>
                     <NavLink to="/">
                       Contacto
