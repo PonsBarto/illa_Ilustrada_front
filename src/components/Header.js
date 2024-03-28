@@ -48,18 +48,10 @@ const Header = () => {
             </div>
             <div className="col-5">
               <div className="header-upper-links d-flex aling-items-center justify-content-between ">
+          
                 <div>
-                  <Link className="d-flex aling-items-center gap-10 text-white">
-                    <img src="images/compare.png" alt="compare" />
-                    <p className="mb-0">
-                      Comparar <br />
-                      Productos
-                    </p>
-                  </Link>
-                </div>
-                <div>
-                  <Link className="d-flex aling-items-center gap-10 text-white">
-                    <img src="images/compare.png" alt="wishlist" />
+                  <Link to="/favoritos" className="d-flex aling-items-center gap-10 text-white">
+                    <img src="images/compare.png" alt="wishlist"/>
                     <p className="mb-0">
                       Lista de <br />
                       Favoritos
@@ -102,7 +94,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/compare.png" alt="" />
+                      <img src="" alt="" />
                       <span className="me-5 d-inline-block">
                         Ver Categorias
                       </span>
