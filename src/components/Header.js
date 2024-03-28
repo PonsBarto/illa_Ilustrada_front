@@ -59,7 +59,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex aling-items-center gap-10 text-white">
+                  <Link to="/Login" className="d-flex aling-items-center gap-10 text-white">
                     <img src="images/compare.png" alt="user" />
                     <p className="mb-0">
                       Mi Cuenta <br />
