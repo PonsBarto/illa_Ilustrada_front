@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BiTimeFive } from "react-icons/bi";
+import BreadCrumb from "../components/BreadCrumb";
+import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
     <>
+    <Meta title={"Illa Ilustrada"} />
+      <BreadCrumb title="Illa Ilustrada" />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -90,56 +94,58 @@ const Home = () => {
         </div>
       </section>
       <section className="home-wrapper-2 py-5">
-        <div className="container-xxl">
-          <div className="row">
+    <div className="container-xxl">
+        <div className="row">
             <div className="col-12">
-              <div className="categories d-flex justify-content-between align-items-center">
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Poblacion</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
+                <div className="categories d-flex justify-content-between align-items-center">
+                    <div className="d-flex gap align-items-center">
+                        <div>
+                            <h6>Poblacion</h6>
+                            <p>10 productos</p>
+                            <img src="images/banner2.png" alt="Poblaciones"/>
+                        </div>
+                    </div>
+                    <div className="d-flex gap align-items-center">
+                        <div>
+                            <h6>Playas</h6>
+                            <p>10 productos</p>
+                            <img src="images/banner2.png" alt="Poblaciones"/>
+                        </div>
+                    </div>
+                    <div className="d-flex gap align-items-center">
+                        <div>
+                            <h6>Faros</h6>
+                            <p>10 productos</p>
+                            <img src="images/banner2.png" alt="Poblaciones"/>
+                        </div>
+                    </div>
+                    <div className="d-flex gap align-items-center">
+                        <div>
+                            <h6>Personalizado</h6>
+                            <p>10 productos</p>
+                            <img src="images/banner2.png" alt="Poblaciones"/>
+                        </div>
+                    </div>
                 </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Playas</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Faros</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-                <div className="d-flex gap align-items-center">
-                  <div>
-                    <h6>Personalizado</h6>
-                    <p>10 productos</p>
-                    <img src="images/banner2.png" alt="Poblaciones"/>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-      <section className="feature-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
+    </div>
+</section>
+<section className="feature-wrapper py-5 home-wrapper-2">
+    <div className="container-xxl">
+        <div className="row">
             <div className="col-12">
-              <h3 className="selection-heading">Coleccion Destacada</h3>
+                <h3 className="selection-heading">Coleccion Destacada</h3>
             </div>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-          </div>
+            <div className="col-12 d-flex">
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+            </div>
         </div>
-      </section>
+    </div>
+</section>
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
