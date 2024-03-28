@@ -140,7 +140,7 @@ const Header = () => {
                     <NavLink to="/nosotros">
                       Nosotros
                     </NavLink>
-                    <NavLink to="/">
+                    <NavLink to="/contact">
                       Contacto
                     </NavLink>
                   </div>
