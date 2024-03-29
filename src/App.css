@@ -299,7 +299,7 @@ small-banner {
   cursor: pointer;
 }
 
-.filter-card .form-check-input:focus{
+.filter-card .form-check-input:focus {
   box-shadow: none;
   border-color: rgb(0, 0, 0, 0.25);
 }
@@ -317,7 +317,7 @@ small-banner {
   margin-top: 15px;
 }
 
-.colors{
+.colors {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -330,13 +330,13 @@ small-banner {
   border-radius: 50%;
 }
 
-.filter-sort-grid{
- padding: 10px;
- background-color: white;
- border-radius: 10px; 
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.grid img{
+.grid img {
   width: 35px;
   height: 35px;
   background-color: #f2f2f2;
@@ -345,45 +345,44 @@ small-banner {
   cursor: pointer;
 }
 
-.gr-12{
+.gr-12 {
   width: 100%;
 }
 
-.gr-6{
+.gr-6 {
   width: 48%;
 }
 
-.gr-4{
+.gr-4 {
   width: 32%;
 }
 
-.gr-3{
+.gr-3 {
   width: 24%;
 }
 
-.gr-12 .product-card{
+.gr-12 .product-card {
   display: flex;
   gap: 20px;
 }
 
-.gr-6 .product-card{
+.gr-6 .product-card {
   width: 100%;
 }
 
-.gr-4 .product-image img{
+.gr-4 .product-image img {
   margin: auto;
   display: block;
 }
 
-.gr-12 .product-card .product-image{
+.gr-12 .product-card .product-image {
   width: 270px;
 }
 
-gr-12 .action-bar{
+gr-12 .action-bar {
   top: 13%;
 }
 /*Our Sotre*/
-
 
 /*Contact Page*/
 
@@ -439,7 +438,7 @@ gr-12 .action-bar{
   color: var(--color-777777);
 }
 
-.auth-card p{
+.auth-card p {
   color: var(--color-777777);
 }
 
@@ -467,6 +466,59 @@ gr-12 .action-bar{
   background-color: var(--color-131921);
   color: white;
 }
-
-
 /*Auth Card*/
+
+/*Product Page*/
+
+.main-product-image {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main-product-image {
+  border-radius: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-product-details {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-product-details h3.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-1c1b1b);
+  margin-bottom: 10px;
+}
+
+.main-product-details p.price {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-product-details a.review-btn,
+.t-review {
+  color: var(--color-777777);
+  font-size: 13px;
+}
+
+.product-heading {
+  font-size: 14px;
+  color: var(--color-1c1b1b);
+  margin-bottom: 0px;
+}
+
+.product-data {
+  font-size: 13px;
+  columns: var(--color-777777);
+  margin-bottom: 0px;
+}
+/*Product Page*/

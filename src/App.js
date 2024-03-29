@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
 import Resetpassword from "./pages/Reserpassword";
+import SingleProduct from "./pages/SingelProduct";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact/>} />
-            <Route path="tienda" element={<OurStore/>}/>
+            <Route path="product" element={<OurStore/>}/>
+            <Route path="product/:id" element={<SingleProduct/>}/>
             <Route path="nosotros" element={<Us/>}/>
             <Route path="favoritos" element={<Wishlist/>}/>
             <Route path="login" element={<Login/>}/>

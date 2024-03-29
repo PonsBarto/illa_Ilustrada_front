@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center">
-                <img src="images/compare.png" alt="newsletter" />
+                <img src="../images/compare.png" alt="newsletter" />
                 <h3 className="mb-0 text-white">
                   Suscribrete para mas novedades
                 </h3>

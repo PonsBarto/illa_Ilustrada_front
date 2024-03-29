@@ -48,10 +48,12 @@ const Header = () => {
             </div>
             <div className="col-5">
               <div className="header-upper-links d-flex aling-items-center justify-content-between ">
-          
                 <div>
-                  <Link to="/favoritos" className="d-flex aling-items-center gap-10 text-white">
-                    <img src="images/compare.png" alt="wishlist"/>
+                  <Link
+                    to="/favoritos"
+                    className="d-flex aling-items-center gap-10 text-white"
+                  >
+                    <img src="../images/compare.png" alt="wishlist" />
                     <p className="mb-0">
                       Lista de <br />
                       Favoritos
@@ -59,8 +61,11 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link to="/Login" className="d-flex aling-items-center gap-10 text-white">
-                    <img src="images/compare.png" alt="user" />
+                  <Link
+                    to="/Login"
+                    className="d-flex aling-items-center gap-10 text-white"
+                  >
+                    <img src="../images/compare.png" alt="user" />
                     <p className="mb-0">
                       Mi Cuenta <br />
                       Registro
@@ -69,7 +74,7 @@ const Header = () => {
                 </div>
                 <div>
                   <Link className="d-flex aling-items-center gap-10 text-white">
-                    <img src="images/compare.png" alt="carte" />
+                    <img src="../images/compare.png" alt="carte" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
                       <p className="mb-0">100€</p>
@@ -123,18 +128,10 @@ const Header = () => {
                 </div>
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
-                    <NavLink to="/">
-                      Home
-                    </NavLink>
-                    <NavLink  to="/tienda">
-                      Nuestra tienda
-                    </NavLink>
-                    <NavLink to="/nosotros">
-                      Nosotros
-                    </NavLink>
-                    <NavLink to="/contact">
-                      Contacto
-                    </NavLink>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/product">Nuestra tienda</NavLink>
+                    <NavLink to="/nosotros">Nosotros</NavLink>
+                    <NavLink to="/contact">Contacto</NavLink>
                   </div>
                 </div>
               </div>
