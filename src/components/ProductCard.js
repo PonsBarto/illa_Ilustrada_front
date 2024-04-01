@@ -13,7 +13,7 @@ const ProductCard = (props) => {
             location.pathname == "/store" ? `gr-${grid}` : "col-11"
           }`}
         >
-          <Link to=":id" className="product-card position-relative">
+          <Link to="product/:id" className="product-card position-relative">
             <div className="wshlist-icon posistion-absolute">
               <div className="product-card position-relative">
                 <div className="product-image">

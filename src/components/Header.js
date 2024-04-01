@@ -29,7 +29,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">illa ilustrada</Link>
+                <Link to="/" className="text-white">illa ilustrada</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -73,11 +73,11 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex aling-items-center gap-10 text-white">
-                    <img src="../images/compare.png" alt="carte" />
+                  <Link to="/cart" className="d-flex aling-items-center gap-10 text-white">
+                    <img src="../images/compare.png" alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">100€</p>
+                      <p className="mb-0">0€</p>
                     </div>
                   </Link>
                 </div>
