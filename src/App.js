@@ -11,7 +11,7 @@ import Wishlist from "./pages/Wishlist";
 import Login from "./pages/Login";
 import Forgotpassword from "./pages/Forgotpassword";
 import Signup from "./pages/Signup";
-import Resetpassword from "./pages/Reserpassword";
+import Resetpassword from "./pages/Resetpassword";
 import SingleProduct from "./pages/SingelProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
