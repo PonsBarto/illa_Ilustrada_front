@@ -1,190 +1,157 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BiTimeFive } from "react-icons/bi";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
+import Container from "../components/Container";
+import { services } from "../utils/Data";
 
 const Home = () => {
   return (
     <>
-    <Meta title={"Illa Ilustrada"} />
-      <BreadCrumb title="Illa Ilustrada" />
-      <section className="home-wrapper-1 py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-6">
-              <div className="main-baner position-relative">
-                <img
-                  src="/images/banner.png"
-                  className="img-fluid rounded-3"
-                  alt="main banner"
-                />
-                <div className="main-banner-content position-absolute">
-                  <h4>Compra tu ilustracion</h4>
-                  <h5>Macarella</h5>
-                  <p>14€</p>
-                  <Link className="button">Comprar</Link>
+      <Container class1="home-wrapper-1 py-5">
+        <div className="row">
+          <div className="col-6">
+            <div className="main-baner position-relative">
+              <img
+                src="/images/banner.png"
+                className="img-fluid rounded-3"
+                alt="main banner"
+              />
+              <div className="main-banner-content position-absolute">
+                <h4>Compra tu ilustracion</h4>
+                <h5>Macarella</h5>
+                <p>14€</p>
+                <Link className="button">Comprar</Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="row">
+              <div className="col-6">
+                <div className="small-baner position-relative p-1">
+                  <img
+                    src="/images/banner2.png"
+                    className="img-fluid rounded-3"
+                    alt="main banner"
+                  />
+                  <div className="small-banner-content position-absolute">
+                    <h4>Recien Llegado</h4>
+                    <h5>Ciutadella</h5>
+                    <p>14€</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6">
+                <div className="small-baner position-relative p-1">
+                  <img
+                    src="/images/banner2.png"
+                    className="img-fluid rounded-3"
+                    alt="main banner"
+                  />
+                  <div className="small-banner-content position-absolute">
+                    <h4>Top ventas</h4>
+                    <h5>Binibeca</h5>
+                    <p>14€</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-6">
-              <div className="row">
-                <div className="col-6">
-                  <div className="small-baner position-relative p-1">
-                    <img
-                      src="/images/banner2.png"
-                      className="img-fluid rounded-3"
-                      alt="main banner"
-                    />
-                    <div className="small-banner-content position-absolute">
-                      <h4>Recien Llegado</h4>
-                      <h5>Ciutadella</h5>
-                      <p>14€</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="small-baner position-relative p-1">
-                    <img
-                      src="/images/banner2.png"
-                      className="img-fluid rounded-3"
-                      alt="main banner"
-                    />
-                    <div className="small-banner-content position-absolute">
-                      <h4>Top ventas</h4>
-                      <h5>Binibeca</h5>
-                      <p>14€</p>
-                    </div>
+            <div className="row">
+              <div className="col-6">
+                <div className="small-baner position-relative p-1">
+                  <img
+                    src="/images/banner2.png"
+                    className="img-fluid rounded-3"
+                    alt="main banner"
+                  />
+                  <div className="small-banner-content position-absolute">
+                    <h4>Top ventas</h4>
+                    <h5>Mahon</h5>
+                    <p>14€</p>
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-6">
-                  <div className="small-baner position-relative p-1">
-                    <img
-                      src="/images/banner2.png"
-                      className="img-fluid rounded-3"
-                      alt="main banner"
-                    />
-                    <div className="small-banner-content position-absolute">
-                      <h4>Top ventas</h4>
-                      <h5>Mahon</h5>
-                      <p>14€</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="small-baner position-relative p-1">
-                    <img
-                      src="/images/banner2.png"
-                      className="img-fluid rounded-3"
-                      alt="main banner"
-                    />
-                    <div className="small-banner-content position-absolute">
-                      <h4>Recien Llegado</h4>
-                      <h5>Turqueta</h5>
-                      <p>14€</p>
-                    </div>
+              <div className="col-6">
+                <div className="small-baner position-relative p-1">
+                  <img
+                    src="/images/banner2.png"
+                    className="img-fluid rounded-3"
+                    alt="main banner"
+                  />
+                  <div className="small-banner-content position-absolute">
+                    <h4>Recien Llegado</h4>
+                    <h5>Turqueta</h5>
+                    <p>14€</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className="home-wrapper-2 py-5">
-    <div className="container-xxl">
+      </Container>
+      <Container class1="home-wrapper-2 py-5">
         <div className="row">
-            <div className="col-12">
-                <div className="categories d-flex justify-content-between align-items-center">
-                    <div className="d-flex gap align-items-center">
-                        <div>
-                            <h6>Poblacion</h6>
-                            <p>10 productos</p>
-                            <img src="images/banner2.png" alt="Poblaciones"/>
-                        </div>
-                    </div>
-                    <div className="d-flex gap align-items-center">
-                        <div>
-                            <h6>Playas</h6>
-                            <p>10 productos</p>
-                            <img src="images/banner2.png" alt="Poblaciones"/>
-                        </div>
-                    </div>
-                    <div className="d-flex gap align-items-center">
-                        <div>
-                            <h6>Faros</h6>
-                            <p>10 productos</p>
-                            <img src="images/banner2.png" alt="Poblaciones"/>
-                        </div>
-                    </div>
-                    <div className="d-flex gap align-items-center">
-                        <div>
-                            <h6>Personalizado</h6>
-                            <p>10 productos</p>
-                            <img src="images/banner2.png" alt="Poblaciones"/>
-                        </div>
-                    </div>
+          <div className="col-12">
+            <div className="categories d-flex justify-content-between align-items-center">
+              <div className="d-flex gap align-items-center">
+                <div>
+                  <h6>Poblacion</h6>
+                  <p>10 productos</p>
+                  <img src="images/banner2.png" alt="Poblaciones" />
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section className="feature-wrapper py-5 home-wrapper-2">
-    <div className="container-xxl">
-        <div className="row">
-            <div className="col-12">
-                <h3 className="selection-heading">Coleccion Destacada</h3>
-            </div>
-            <div className="col-12 d-flex">
-              <ProductCard/>
-              <ProductCard/>
-              <ProductCard/>
-              <ProductCard/>
-            </div>
-        </div>
-    </div>
-</section>
-      <section className="home-wrapper-2 py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="servies d-flex align-items-center justify-content-between">
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/estrella1.png" alt="services" />
-                  <div>
-                    <h6>Envios gratis</h6>
-                    <p className="mb-0">Para pedidos de mas de 40€</p>
-                  </div>
+              </div>
+              <div className="d-flex gap align-items-center">
+                <div>
+                  <h6>Playas</h6>
+                  <p>10 productos</p>
+                  <img src="images/banner2.png" alt="Poblaciones" />
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/estrella1.png" alt="services" />
-                  <div>
-                    <h6>Ofertas diarias</h6>
-                    <p className="mb-0">Ahorra en tu compra</p>
-                  </div>
+              </div>
+              <div className="d-flex gap align-items-center">
+                <div>
+                  <h6>Faros</h6>
+                  <p>10 productos</p>
+                  <img src="images/banner2.png" alt="Poblaciones" />
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/estrella1.png" alt="services" />
-                  <div>
-                    <h6>Atencion al cliente 24/7</h6>
-                    <p className="mb-0">Cntacta con un experto</p>
-                  </div>
+              </div>
+              <div className="d-flex gap align-items-center">
+                <div>
+                  <h6>Personalizado</h6>
+                  <p>10 productos</p>
+                  <img src="images/banner2.png" alt="Poblaciones" />
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/estrella1.png" alt="services" />
-                  <div>
-                    <h6>Pagos seguros</h6>
-                    <p className="mb-0">100% protegidos</p>
-                  </div>
-                </div>
-            
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </Container>
+      <Container class1="feature-wrapper py-5 home-wrapper-2">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="selection-heading">Coleccion Destacada</h3>
+          </div>
+          <div className="col-12 d-flex">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </Container>
+      <Container class1="home-wrapper-2 py-5">
+        <div className="row">
+          <div className="col-12">
+            <div className="services d-flex align-items-center justify-content-between">
+              {services.map((i, j) => (
+                <div className="d-flex align-items-center gap-15" key={j}>
+                  <img src={i.image} alt="services" />
+                  <h6>{i.title}</h6>
+                  <p className="mb-0">{i.tagline}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Container>
     </>
   );
 };

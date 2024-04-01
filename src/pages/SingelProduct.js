@@ -3,14 +3,14 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
+import Container from "../components/Container";
 
 const SingleProduct = () => {
   return (
     <>
       <Meta title="Nombre del Producto" />
       <BreadCrumb title="Nombre del Producto" />
-      <div className="main-product-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      <Container class1="main-product-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-4">
               <div className="main-product-image">
@@ -71,8 +71,7 @@ const SingleProduct = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          
         <div className="description-wrapper py-5 home-wrapper-2">
           <div className="container-xxl">
             <div className="row">
@@ -100,7 +99,8 @@ const SingleProduct = () => {
             </div>
           </div>
         </section>
-      </div>
+        </div>
+      </Container>
     </>
   );
 };
