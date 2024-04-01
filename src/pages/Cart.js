@@ -22,11 +22,11 @@ const Cart = () => {
               <div className="cart-data py-3 mb-2 d-flex justify-content-between align-items-center">
                 <div className="cart-col-1 gap-15 d-flex align-items-center">
                   <div className="w-25">
-                    <img src="../images/banner2.png" alt="product image" />
+                    <img src="../images/banner3.png" alt="product image" />
                   </div>
                   <div className="w-75">
-                    <p className="title">LOPOLOALAOLA</p>
-                    <p className="color">Descripcion: </p>
+                    <p className="title">Nombre Producto</p>
+                    <p className="color">Categoria </p>
                   </div>
                 </div>
                 <div className="cart-col-2">
@@ -54,11 +54,11 @@ const Cart = () => {
               <div className="cart-data py-3 mb-2 d-flex justify-content-between align-items-center">
                 <div className="cart-col-1 gap-15 d-flex align-items-center">
                   <div className="w-25">
-                    <img src="../images/banner2.png" alt="product image" />
+                    <img src="../images/banner3.png" alt="product image" />
                   </div>
                   <div className="w-75">
-                    <p className="title">LOPOLOALAOLA</p>
-                    <p className="color">Descripcion: </p>
+                    <p className="title">Nombre Producto</p>
+                    <p className="Categoria">Categoria </p>
                   </div>
                 </div>
                 <div className="cart-col-2">
