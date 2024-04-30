@@ -6,6 +6,7 @@ import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import { registerUser } from "../features/users/userSlice";
 
 const signUpSchema = yup.object({
   firstname: yup.string().required("First Name is Required"),
@@ -16,6 +17,7 @@ const signUpSchema = yup.object({
 });
 
 const Signup = () => {
+  const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
       firstname: "",
@@ -26,7 +28,7 @@ const Signup = () => {
     },
     validationSchema: signUpSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      dispatch(registerUser(values));
     },
   });
 
