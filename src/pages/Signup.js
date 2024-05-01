@@ -11,7 +11,10 @@ import { registerUser } from "../features/users/userSlice";
 const signUpSchema = yup.object({
   firstname: yup.string().required("First Name is Required"),
   lastname: yup.string().required("Last Name is Required"),
-  email: yup.string().nullable().email("Email Should be Valid"),
+  email: yup
+    .string()
+    .email("Email Should be Valid")
+    .required("Email Adress is required"),
   mobile: yup.string().required("Mobile No is Required"),
   password: yup.string().required("Password is Required"),
 });
