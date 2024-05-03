@@ -4,12 +4,12 @@ import Meta from "../components/Meta";
 import ReactStatus from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 import Container from "../components/Container";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../features/products/productSlice";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
-  const productState = useSelector((state) => state.product.product);
+  const productState = useSelector((state) => state?.product?.product);
   //console.log(productState);
   const dispatch = useDispatch(() => {
     getProducts();
@@ -182,7 +182,7 @@ const OurStore = () => {
             </div>
             <div className="product-list pb-5">
               <div className="d-flex gap-10 flex-wrap">
-                <ProductCard data={productState} grid={grid} />
+                <ProductCard data={productState?productState:[]} grid={grid} />
               </div>
             </div>
           </div>

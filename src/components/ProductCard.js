@@ -1,10 +1,17 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addToWishlist } from "../features/products/productSlice";
 
 const ProductCard = (props) => {
   const { grid, data } = props;
+  const dispatch = useDispatch();
   let location = useLocation();
+  const addToWish = (id) => {
+    //console.log(id);
+    dispatch(addToWishlist(id));
+  };
   return (
     <>
       {data?.map((item, index) => {
@@ -16,7 +23,12 @@ const ProductCard = (props) => {
               }`}
             >
               <div className="wishlist-icon position-absolute">
-                <button className="border-0 bg-transparent">
+                <button
+                  className="border-0 bg-transparent"
+                  onClick={(e) => {
+                    addToWish(item?._id);
+                  }}
+                >
                   <img src={wish} alt="wishlist" />
                 </button>
               </div>
@@ -28,7 +40,7 @@ const ProductCard = (props) => {
                   alt="product image"
                   width={160}
                 />
-                 <img
+                <img
                   src={item.images[0].url}
                   className="img-fluid mx-auto"
                   alt="product image"
