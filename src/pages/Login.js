@@ -7,6 +7,7 @@ import CustomInput from "../components/CustomInput";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { loginUser } from "../features/users/userSlice";
+import { useDispatch } from 'react-redux';
 
 const loginSchema = yup.object({
   email: yup

@@ -3,6 +3,7 @@ import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToWishlist } from "../features/products/productSlice";
+import Wishlist from "../pages/Wishlist";
 
 const ProductCard = (props) => {
   const { grid, data } = props;
@@ -29,7 +30,7 @@ const ProductCard = (props) => {
                     addToWish(item?._id);
                   }}
                 >
-                  <img src={wish} alt="wishlist" />
+                  <img src={Wishlist} alt="wishlist" />
                 </button>
               </div>
 

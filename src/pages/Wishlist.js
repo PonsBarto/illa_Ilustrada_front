@@ -4,6 +4,8 @@ import Meta from "../components/Meta";
 import Container from "../components/Container";
 import { useDispatch, useSelector } from "react-redux";
 import { addToWishlist } from "../features/products/productSlice";
+import { useEffect } from 'react';
+import { getUserProductWishlist } from "../features/users/userSlice";
 
 const Wishlist = () => {
   const dispatch = useDispatch();
@@ -18,7 +20,7 @@ const Wishlist = () => {
   const removeFromWishlist = (id) => {
     dispatch(addToWishlist(id));
     setTimeout(() => {
-      dispatch(getProductsWishlist());
+      dispatch(getUserProductWishlist());
     }, 300);
   };
   return (

@@ -7,6 +7,7 @@ import CustomInput from "../components/CustomInput";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { registerUser } from "../features/users/userSlice";
+import { useDispatch } from 'react-redux';
 
 const signUpSchema = yup.object({
   firstname: yup.string().required("First Name is Required"),
